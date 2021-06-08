@@ -13,8 +13,8 @@
   "license": "MIT",
   "scripts": {
     "build": "pika build",
-    "lint": "prettier --check '{src,test}/**/*.{js,json,ts}' '*.{md,json}'",
-    "lint:fix": "prettier --write '{src,test}/**/*.{js,json,ts}' '*.{md,json}'",
+    "lint": "prettier --check \"{src,test}/**/*.{js,json,ts}\" \"*.{md,json}\"",
+    "lint:fix": "prettier --write \"{src,test}/**/*.{js,json,ts}\" \"*.{md,json}\"",
     "pretest": "npm run -s lint",
     "test": "jest --coverage",
     "test:typescript": "npx tsc --noEmit --declaration --noUnusedLocals --esModuleInterop --strict test/typescript-validate.ts"
@@ -27,7 +27,11 @@
     "@octokit/plugin-rest-endpoint-methods": "^5.0.1",
     "@octokit/plugin-retry": "^3.0.7",
     "@octokit/plugin-throttling": "^3.4.1",
+  <<<<<<< debug
     "@octokit/types": "^6.13.2"
+  =======
+    "@octokit/types": "^6.16.1"
+  >>>>>>> main
   },
   "devDependencies": {
     "@octokit/tsconfig": "^1.0.2",
@@ -38,12 +42,12 @@
     "@types/jest": "^26.0.22",
     "@types/node": "^14.14.36",
     "fetch-mock": "^9.11.0",
-    "jest": "^26.6.3",
+    "jest": "^27.0.0",
     "mockdate": "^3.0.5",
-    "prettier": "^2.2.1",
+    "prettier": "2.3.1",
     "semantic-release": "^17.4.2",
     "semantic-release-plugin-update-version-in-files": "^1.1.0",
-    "ts-jest": "^26.5.4",
+    "ts-jest": "^27.0.0-next.12",
     "typescript": "^4.2.3"
   },
   "@pika/pack": {
